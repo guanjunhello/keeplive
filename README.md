@@ -39,6 +39,7 @@
 ### 第二步，在manifest中添加权限申请，可能会报过时，不必在意
 ```Xml
         <uses-permission android:name="android.permission.GET_TASKS"/>
+        <uses-permission android:name="android.permission.REORDER_TASKS"/>
 ```
 ### 第三步，在manifest中添加相关service及broadcast。原样copy，不要改动
 ```Xml
