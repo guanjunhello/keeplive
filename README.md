@@ -7,8 +7,9 @@
         ForegroundNotification foregroundNotification = new ForegroundNotification("测试","描述", R.mipmap.ic_launcher,
                 //定义前台服务的通知点击事件
                 new ForegroundNotificationClickListener() {
+                    
                     @Override
-                    public void foregroundNotificationClick() {
+                    public void foregroundNotificationClick(Context context, Intent intent) {
                     }
                 });
         //启动保活服务
@@ -55,11 +56,11 @@
 <dependency>
   <groupId>com.fanjun</groupId>
   <artifactId>keeplive</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ```
 #### Gradle
 ```Xml
-implementation 'com.fanjun:keeplive:1.0.1'
+implementation 'com.fanjun:keeplive:1.0.2'
 ```
