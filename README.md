@@ -2,6 +2,8 @@
 ## 集成了无声音乐（已考虑功耗，降至最低），前台服务、双进程守护、像素保活，jobs五种保活方式
 ## 主流的魅族、小米、锤子、vivo、努比亚、三星、华为等品牌，涵盖4.4至9.0的机型测试结果为，只要用户不主动杀死程序就不会死，但某些机型锁屏即断网的问题不是我能解决的。
 ## 更新日志
+### 【1.0.6】 2018-11-30 
+#### 1.适配安卓8.0以上，修正startForegroundService引起not found service进而造成某些机型NAR的问题
 ### 【1.0.4】 2018-11-15 
 #### 1.修改OnePixelActivity的基类为Activity，避免由于主题造成兼容问题
 #### 2.适配安卓8.0以上，将安卓8.0以上的startservice改为startForegroundService，增强了稳定性
@@ -63,11 +65,11 @@
 <dependency>
   <groupId>com.fanjun</groupId>
   <artifactId>keeplive</artifactId>
-  <version>1.0.4</version>
+  <version>1.0.6</version>
   <type>pom</type>
 </dependency>
 ```
 #### Gradle
 ```Xml
-implementation 'com.fanjun:keeplive:1.0.4'
+implementation 'com.fanjun:keeplive:1.0.6'
 ```
